@@ -5,23 +5,40 @@ import axios from 'axios';
 
 export default {
   name: 'App',
+
+  data(){
+    return {
+      projects: []
+    }
+  },
+
   methods: {
     getApi(){
       axios.get(store.apiUrl + 'projects')
         .then(results => {
-          console.log(results.data);
+          this.projects = results.data;
         })
     }
   },
+
   mounted(){
     this.getApi();
   }
+
 }
 </script>
 
 <template>
-  <div class="container bg-dark">
-    <h1 class="text-warning">Test</h1>
+  <div class="container bg-dark text-light">
+    <h1 class="text-warning">Project List:</h1>
+    <ul>
+      <li
+        v-for="project in projects"
+        :key="project.id"
+        >
+        <span>{{ project.name }}</span>
+      </li>
+    </ul>
   </div>
 </template>
 
