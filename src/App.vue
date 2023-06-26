@@ -1,14 +1,16 @@
 <script>
 export default {
-
+  name: 'App'
 }
 </script>
 
 <template>
-  <h1>Test</h1>
+  <div class="container bg-dark">
+    <h1 class="text-warning">Test</h1>
+  </div>
 </template>
 
 
-<style>
+<style lang="scss">
 
 </style>

@@ -1,5 +1,5 @@
 <div align="center"><a href="https://vitejs.dev/" target="_blank"><img src="https://vitejs.dev/logo-with-shadow.png" width="100"></a>
-<a href="https://vuejs.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" width="80"></a></div>
+<a href="https://vuejs.org/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" width="85"></a></div>
 
 # Vite-Boolfolio
 > questo progetto è collegata al progetto la cui repository è: repo <a href="https://github.com/raffaele-catalano/laravel-api" target="_blank">laravel-api</a>
