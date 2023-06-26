@@ -1,6 +1,21 @@
 <script>
+
+import {store} from './data/store.js'
+import axios from 'axios';
+
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    getApi(){
+      axios.get(store.apiUrl + 'projects')
+        .then(results => {
+          console.log(results.data);
+        })
+    }
+  },
+  mounted(){
+    this.getApi();
+  }
 }
 </script>
 
