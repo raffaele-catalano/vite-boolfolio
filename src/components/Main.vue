@@ -2,9 +2,14 @@
 import axios from 'axios';
 import {store} from '../data/store.js';
 
+import Card from './partials/Card.vue'
 
 export default {
     name: 'Main',
+
+    components: {
+        Card,
+    },
 
     data() {
         return {
@@ -49,7 +54,17 @@ export default {
             </div>
         </div>
     
-        
+        <div class="container">
+                <div class="row row-cols-5 py-2">
+                    <Card
+                    v-for="project in projects"
+                    :key="project.id"
+                    :title="project.name"
+                    :type="project.type.name"
+                    :technologies="project.technologies"
+                    :status="project.is_closed"/>
+                </div>
+        </div>
     </main>
 
 </template>
