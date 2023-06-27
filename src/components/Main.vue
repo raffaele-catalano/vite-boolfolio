@@ -3,33 +3,33 @@ import axios from 'axios';
 import {store} from '../data/store.js';
 
 export default {
-name: 'Main',
+    name: 'Main',
 
-data() {
-    return {
-        store,
-        projects: []
+    data() {
+        return {
+            store,
+            projects: []
+        }
+    },
+
+    methods: {
+        getApi() {
+            axios.get(store.apiUrl + 'projects')
+                .then(results => {
+                    this.projects = results.data;
+                })
+        }
+    },
+
+    mounted() {
+        this.getApi();
     }
-},
-
-methods: {
-    getApi() {
-        axios.get(store.apiUrl + 'projects')
-            .then(results => {
-                this.projects = results.data;
-            })
-    }
-},
-
-mounted() {
-    this.getApi();
-}
 }
 </script>
 
 <template>
     <div class="container my-3">
-        <h1 class="text-center fw-bold my-4">
+        <h1 class="text-center text-primary fw-bold my-4">
             Welcome to Boolfolio
         </h1>
 
