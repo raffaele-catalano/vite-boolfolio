@@ -10,7 +10,7 @@ export default {
                 Welcome to Boolfolio
             </h1>
     
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quidem dignissimos nihil repudiandae quos harum placeat distinctio voluptatum itaque commodi, iusto, eveniet eius. Quisquam labore animi possimus consequuntur dicta iusto maxime numquam debitis cum, nemo, aperiam et! Aperiam itaque labore quia aliquid qui nemo!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus provident sequi tenetur modi iste! Tenetur veniam quaerat consectetur culpa laborum, nemo cum officiis aut a labore veritatis eum voluptas, odio explicabo accusamus doloribus quo aspernatur asperiores deleniti optio error nostrum. Id suscipit necessitatibus quia, sint nesciunt earum ex nam aliquam. Totam, corporis amet consequuntur rem neque commodi reiciendis est aperiam exercitationem similique. Facilis porro ipsa, a, consectetur vitae cum impedit sequi neque perspiciatis commodi distinctio sed. Commodi repudiandae aliquam numquam.</p>
             <div class="gif-container d-flex justify-content-center">
                 <img class="w-25" src="https://upload.wikimedia.org/wikipedia/commons/8/81/Portfolio_.gif" alt="portfolio-gif">
             </div>

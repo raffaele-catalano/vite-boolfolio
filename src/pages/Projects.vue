@@ -46,7 +46,7 @@ export default {
     <div class="container my-3">
         <h2 class="text-center text-primary fw-bold">Projects List</h2>
         <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque numquam illum optio sunt praesentium iste, dolores obcaecati veritatis impedit sapiente ab autem voluptates mollitia quisquam minus repudiandae quidem, animi placeat.</p>
-        <div class="row row-cols-5 py-2">
+        <div class="row row-cols-4 py-2">
             <Card
             v-for="project in projects"
             :key="project.id"
