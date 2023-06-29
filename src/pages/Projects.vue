@@ -53,7 +53,9 @@ export default {
             :title="project.name"
             :type="project.type.name"
             :technologies="project.technologies"
-            :status="project.is_closed"/>
+            :status="project.is_closed"
+            :slug="project.slug"
+            />
         </div>
     </div>
 </template>
