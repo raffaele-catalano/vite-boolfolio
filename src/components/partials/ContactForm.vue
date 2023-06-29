@@ -10,6 +10,7 @@ export default {
             name: '',
             email: '',
             message: '',
+            errors: {},
         }
     },
 
@@ -25,6 +26,7 @@ export default {
             axios.post(store.apiUrl + 'contacts', data)
                 .then(result => {
 
+                    this.errors = result.data.errors;
                     console.log(result.data);
 
                 })
@@ -36,23 +38,22 @@ export default {
 <template>
 
     <div class="container rc-form rounded-2">
-        <!-- blocca la ricarica della pagina che di base è automatica al click di un button type=submit -->
+        <!-- @submit.prevent => blocca la ricarica della pagina che di base è automatica al click di un button type=submit -->
         <form @submit.prevent="sendForm()" class="p-3">
     
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input v-model.trim="name" type="text" name="name" id="" class="form-control" placeholder="Type your Fullname">
+                <input v-model.trim="name" :class="{ 'is-invalid' : errors.name }" type="text" class="form-control" placeholder="Type your Fullname">
             </div>
             
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input v-model.trim="email" type="email" name="email" id="" class="form-control" placeholder="Type your Email">
+                <input v-model.trim="email" :class="{ 'is-invalid' : errors.email }" type="email" class="form-control" placeholder="Type your Email">
             </div>
     
             <div class="form-floating mb-4">
                 <p>Message</p>
-                <!-- <label for="message" class="form-label">Message</label> -->
-                <textarea v-model.trim="message" name="message" id="" class="form-control" style="height: 150px; width: 100%;"></textarea>
+                <textarea v-model.trim="message" :class="{ 'is-invalid' : errors.message }" class="form-control" style="height: 150px; width: 100%;"></textarea>
             </div>
             
             <div class="d-flex justify-content-center">
