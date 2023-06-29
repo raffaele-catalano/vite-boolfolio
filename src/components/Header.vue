@@ -19,11 +19,12 @@ export default {
                 <ul class="navbar-nav">
                     <li class="nav-item mx-2">
                         <router-link :to="{name: 'home'}"><i class="fa-solid fa-house-chimney fa-lg"><span class="page_name text-dark">Home</span></i></router-link>
-                        <!-- <a class="nav-link" aria-current="page" href="#">Home</a> -->
                     </li>
                     <li class="nav-item mx-2">
                         <router-link :to="{name: 'projects'}"><i class="fa-solid fa-list-check fa-lg"><span class="page_name text-dark">Projects</span></i></router-link>
-                        <!-- <a class="nav-link" aria-current="page" href="#">Contacts</a> -->
+                    </li>
+                    <li class="nav-item mx-2">
+                        <router-link :to="{name: 'contacts'}"><i class="fa-solid fa-file-signature fa-lg"><span class="page_name text-dark">Contacts</span></i></router-link>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Admin</a>

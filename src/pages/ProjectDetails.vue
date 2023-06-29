@@ -43,8 +43,8 @@ export default {
 <template>
     <Loader v-if="!loaded"/>
     <div v-else class="container my-3">
-            <h2 class="text-center text-primary fw-bold my-4">
-                <span class="text-primary">Project:</span> {{ project.name }}
+            <h2 class="text-center my-4">
+                <span class="text-primary fw-bold">Project:</span> {{ project.name }}
             </h2>
 
                                 <!-- FIX -->
